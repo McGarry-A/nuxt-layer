@@ -3,7 +3,7 @@ import type { StorybookConfig } from "@storybook-vue/nuxt";
 const config: StorybookConfig = {
     stories: [
         "../components/**/*.mdx",
-        "../components/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+        "../components/**/*.stories.@(js|ts|tsx)",
     ],
     addons: [
         "@storybook/addon-links",
