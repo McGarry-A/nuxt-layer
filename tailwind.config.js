@@ -2,10 +2,9 @@
 export default {
     content: [],
     theme: {
-        colors: {},
         extend: {
             maxWidth: {
-                "wrapper": "1440px"
+                "content-wrapper": "1440px"
             }
         },
     },

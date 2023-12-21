@@ -3,21 +3,17 @@
 </template>
   
 <script setup lang="ts">
-    import BaseHeader from "../BaseHeader/BaseHeader.vue"
-    import type { Component } from "vue"
+import BaseHeader from "../BaseHeader/BaseHeader.vue";
 
-    type Props = {
-        type: "BaseHeader"
-    }
+interface Props {
+  type: keyof typeof headerMap;
+}
 
-    interface MapInterface {
-        [key: string]: Component
-    }
+const props = defineProps<Props>();
 
-    const props = defineProps<Props>()
-    const map: MapInterface = {
-         BaseHeader: BaseHeader
-    }
+const headerMap = {
+  "base-header": BaseHeader,
+};
 
-    const getHeaderType = () => map[props.type]
+const getHeaderType = () => headerMap[props.type];
 </script>
