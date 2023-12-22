@@ -1,3 +1,5 @@
 <template>
-  <icon-selector type="burger-menu" />
+  <button class="button">
+    <icon-selector type="burger-menu" />
+  </button>
 </template>
