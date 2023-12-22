@@ -5,3 +5,6 @@
     <header-buttons />
   </content-wrapper>
 </template>
+
+<script setup lang="ts">
+</script>

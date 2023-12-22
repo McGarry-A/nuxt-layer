@@ -3,17 +3,19 @@
 </template>
   
 <script setup lang="ts">
+import type { Component } from "vue";
 import BaseHeader from "../BaseHeader/BaseHeader.vue";
 
-interface Props {
-  type: keyof typeof headerMap;
+const layoutStore = useLayoutStore();
+const headerType: string = layoutStore.header.type
+
+interface IHeaderMap {
+    [key: string]: Component
 }
 
-const props = defineProps<Props>();
-
-const headerMap = {
+const headerMap: IHeaderMap = {
   "base-header": BaseHeader,
 };
 
-const getHeaderType = () => headerMap[props.type];
+const getHeaderType = () => headerMap[headerType];
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <header-container type="base-header" />
+  <h1>hello home</h1>
 </template>
 
 <script setup lang="ts"></script>

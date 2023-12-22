@@ -1,5 +1,12 @@
 <template>
-  <button class="button">
+  <button
+    class="button"
+    @click="uiStore.toggleMenu()"
+  >
     <icon-selector type="burger-menu" />
   </button>
 </template>
+
+<script lang="ts" setup>
+    const uiStore = useUiStore()
+</script>
