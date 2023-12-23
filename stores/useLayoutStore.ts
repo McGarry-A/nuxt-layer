@@ -55,11 +55,10 @@ type HeaderAnimation = "fade"
 
 type HeaderPosition = "" | "fixed" | "sticky"
 
-type HeaderVariant = "start" | "center" | "end"
-
+type HeroOptions = {}
 type HeaderOptions = {
     showBrandName: boolean
 }
 
+type HeaderVariant = "start" | "center" | "end"
 type HeroVariants = "start" | "center" | "end"
-type HeroOptions = {}
