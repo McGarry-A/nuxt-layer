@@ -2,7 +2,7 @@ export const useLayoutStore = defineStore('layout', () => {
     const header = ref<IHeader>({
         type: "base-header",
         position: "",
-        variant: "center",
+        variant: "end",
         animation: "fade",
         options: {
             showBrandName: true,

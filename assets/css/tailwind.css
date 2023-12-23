@@ -15,7 +15,7 @@
     --surface-disabled: theme("colors.slate.400");
 
     --surface-bg: theme("colors.slate.200");
-    --surface-elevation-low: theme("colors.slate.50");
+    --surface-elevation-low: theme("colors.slate.100");
     --surface-elevation-high: theme("colors.white");
 
     --clear: theme("colors.gray.800");
