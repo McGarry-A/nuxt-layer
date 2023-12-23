@@ -7,7 +7,7 @@ import type { Component } from "vue";
 import BaseHeader from "../BaseHeader/BaseHeader.vue";
 
 const layoutStore = useLayoutStore();
-const headerType: string = layoutStore.header.type
+const { header: { type: headerType }} =  layoutStore
 
 interface IHeaderMap {
     [key: string]: Component

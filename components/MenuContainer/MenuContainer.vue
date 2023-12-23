@@ -21,8 +21,7 @@
       const layoutStore = useLayoutStore();
       const uiStore = useUiStore()
       
-      const { menu: { type: menuType }} = layoutStore
-      const { menu: { animation: animationType }} = layoutStore
+      const { menu: { type: menuType, animation: animationType }} = layoutStore
 
       interface IHeaderMap {
       [key: string]: Component
