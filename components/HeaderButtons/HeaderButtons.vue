@@ -3,7 +3,10 @@
     class="button"
     @click="uiStore.toggleMenu()"
   >
-    <icon-selector type="burger-menu" />
+    <icon-selector
+      type="burger-menu"
+      class="text-brand-strong"
+    />
   </button>
 </template>
 

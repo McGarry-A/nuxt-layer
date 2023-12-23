@@ -3,7 +3,55 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --content-width: 1440
+  :root {
+    --brand-subtle: theme("colors.sky.400");
+    --brand: theme("colors.sky.700");
+    --brand-strong: theme("colors.sky.900");
+
+    --secondary-subtle: theme("colors.violet.400");
+    --secondary: theme("colors.violet.700");
+    --secondary-strong: theme("colors.violet.900");
+
+    --surface-disabled: theme("colors.slate.400");
+
+    --surface-bg: theme("colors.slate.100");
+    --surface-elevation-low: theme("colors.slate.50");
+    --surface-elevation-high: theme("colors.white");
+
+    --clear: theme("colors.gray.800");
+    --subtle: theme("colors.gray.300");
+    --inverse-subtle: theme("colors.gray.700");
+    --inverse-clear: theme("colors.gray.100");
+
+    --font-primary: Poppins, sans-serif;
+    --font-secondary: Lato, sans-serif;
+  }
+
+  .dark {
+    --brand-subtle: theme("colors.sky.900");
+    --brand: theme("colors.sky.700");
+    --brand-strong: theme("colors.sky.400");
+
+    --surface-bg: theme("colors.slate.900");
+    --surface-elevation-low: theme("colors.slate.800");
+    --surface-elevation-high: theme("colors.slate.950");
+
+    --clear: theme("colors.gray.100");
+    --subtle: theme("colors.gray.700");
+    --inverse-subtle: theme("colors.gray.300");
+    --inverse-clear: theme("colors.gray.800");
+  }
+
+  @layer components {
+    button {
+        @apply py-3 px-8
     }
+  }
+
+  @layer utilities {
+    .btn-primary { @apply bg-brand-strong text-white rounded-3xl font-semibold };
+    .btn-secondary { @apply bg-secondary-strong text-white rounded-3xl font-semibold };
+    /* .btn-ghost {}
+    .btn-label {} */
+  }
 }

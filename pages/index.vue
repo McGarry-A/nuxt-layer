@@ -1,5 +1,5 @@
 <template>
-  <h1>hello home</h1>
+    <hero-container />
 </template>
 
 <script setup lang="ts"></script>
