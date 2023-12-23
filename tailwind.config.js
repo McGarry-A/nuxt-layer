@@ -27,7 +27,7 @@ export default {
             },
 
             maxWidth: {
-                "content-wrapper": "1840px"
+                "content-wrapper": "1640px"
             },
 
             minHeight: {
@@ -36,7 +36,8 @@ export default {
 
             fontFamily: {
                 primary: "var(--font-primary)",
-                secondary: "var(--font-secondary)"
+                secondary: "var(--font-secondary)",
+                tertiary: "var(--font-tertiary)"
             },
         },
     },

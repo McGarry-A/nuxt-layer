@@ -1,0 +1,30 @@
+<template>
+    <svg
+        width="23"
+        height="33"
+        viewBox="0 0 23 33"
+        fill="none"
+        style="height: 70%;"
+        data-astro-cid-j7pv25f6=""
+    >
+        <rect
+            x="0.767442"
+            y="0.767442"
+            width="20.7209"
+            height="31.4651"
+            rx="10.3605"
+            stroke="var(--clear)"
+            stroke-width="1.53488"
+            data-astro-cid-j7pv25f6=""
+        ></rect>
+        <rect
+            x="9"
+            y="8"
+            width="4"
+            height="8"
+            rx="2"
+            fill="var(--clear)"
+            data-astro-cid-j7pv25f6=""
+        ></rect>
+    </svg>
+</template>

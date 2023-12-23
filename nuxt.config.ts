@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/storybook', '@nuxtjs/tailwindcss', '@pinia/nuxt', ['@nuxtjs/google-fonts', {
         families: {
             Poppins: [400, 600, 700],
-            Lato: [400, 600, 700]
+            Lato: [400, 600, 700],
+            Galada: [400]
         }
     }]],
     tailwindcss: {
@@ -25,4 +26,9 @@ export default defineNuxtConfig({
             },
         },
     },
+    router: {
+        options: {
+            linkActiveClass: "font-bold"
+        }
+    }
 })

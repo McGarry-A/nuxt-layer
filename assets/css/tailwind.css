@@ -6,7 +6,7 @@
   :root {
     --brand-subtle: theme("colors.sky.400");
     --brand: theme("colors.sky.700");
-    --brand-strong: theme("colors.sky.900");
+    --brand-strong: theme("colors.sky.950");
 
     --secondary-subtle: theme("colors.violet.400");
     --secondary: theme("colors.violet.700");
@@ -14,7 +14,7 @@
 
     --surface-disabled: theme("colors.slate.400");
 
-    --surface-bg: theme("colors.slate.100");
+    --surface-bg: theme("colors.slate.200");
     --surface-elevation-low: theme("colors.slate.50");
     --surface-elevation-high: theme("colors.white");
 
@@ -25,6 +25,7 @@
 
     --font-primary: Poppins, sans-serif;
     --font-secondary: Lato, sans-serif;
+    --font-tertiary: Galada, sans-serif;
   }
 
   .dark {
@@ -49,9 +50,8 @@
   }
 
   @layer utilities {
-    .btn-primary { @apply bg-brand-strong text-white rounded-3xl font-semibold };
-    .btn-secondary { @apply bg-secondary-strong text-white rounded-3xl font-semibold };
-    /* .btn-ghost {}
-    .btn-label {} */
+    .btn-primary { @apply bg-brand text-white rounded-2xl font-primary };
+    .btn-secondary { @apply bg-secondary text-white rounded-2xl font-primary };
+    .btn-ghost { @apply bg-transparent text-brand rounded-2xl font-semibold border-2 border-brand font-primary }
   }
 }

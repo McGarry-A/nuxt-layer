@@ -8,7 +8,7 @@
                 <brand-logo />
                 <h4
                     v-if="options.showBrandName"
-                    class="text-lg font-bold text-brand-strong"
+                    class="text-lg font-bold font-tertiary text-brand-strong"
                 >
                     Urbanzoo
                 </h4>
