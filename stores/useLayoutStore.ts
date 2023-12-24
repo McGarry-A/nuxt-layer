@@ -21,10 +21,27 @@ export const useLayoutStore = defineStore('layout', () => {
         options: {},
     })
 
-    return { header, menu, hero }
+    const footer = ref<IFooter>({
+        type: "base-footer",
+        animation: "slide"
+    })
+
+    const about = ref<IAbout>({
+        type: "base-about",
+        animation: "fade"
+    })
+
+    return { header, menu, hero, footer, about }
 })
 
-
+interface IAbout {
+    type: AboutType,
+    animation: TAnimate
+}
+interface IFooter {
+    type: FooterType,
+    animation: TAnimate
+}
 interface IHeader {
     type: HeaderType,
     position: HeaderPosition
@@ -48,6 +65,8 @@ interface IHero {
 type MenuType = "base-menu"
 type HeaderType = "base-header"
 type HeroType = "base-hero"
+type FooterType = "base-footer"
+type AboutType = "base-about"
 
 type TAnimate = "slide" | "fade"
 
