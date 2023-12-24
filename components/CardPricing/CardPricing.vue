@@ -1,12 +1,12 @@
 <template>
-    <card-wrapper class="text-center bg-surface-elevation-high">
+    <card-wrapper class="text-center bg-surface-elevation-high text-clear">
         <p
             v-if="props.highlight"
             class="text-xs"
         >
             Most Popular🔥
         </p>
-        <h4 class="text-4xl font-bold">{{ props.title }}</h4>
+        <h4 class="text-4xl font-bold text-brand-strong">{{ props.title }}</h4>
         <p>£{{ props.price }} / month</p>
         <ul class="flex flex-col gap-4 mb-4">
             <li

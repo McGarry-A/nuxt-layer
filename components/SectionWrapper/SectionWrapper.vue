@@ -1,5 +1,9 @@
 <template>
-    <component :is="getAnimation()">
+    <transition-wrapper
+        key="section"
+        type="fade"
+        :appear="true"
+    >
         <content-wrapper class="bg-surface mt-section-margin">
             <h2 class="text-5xl font-bold text-center font-primary text-clear">
                 <slot name="title" />
@@ -11,17 +15,7 @@
                 <slot />
             </div>
         </content-wrapper>
-    </component>
+    </transition-wrapper>
 </template>
 
-<script setup lang="ts">
-import AnimateFadeWrapper from '../AnimateFadeWrapper/AnimateFadeWrapper.vue';
-import AnimateSlideWrapper from '../AnimateSlideWrapper/AnimateSlideWrapper.vue';
-
-const animationMap = {
-    "fade": AnimateFadeWrapper,
-    "slide": AnimateSlideWrapper
-}
-
-const getAnimation = () => animationMap["slide"]
-</script>
+<script setup lang="ts"></script>
