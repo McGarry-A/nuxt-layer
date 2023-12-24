@@ -1,43 +1,7 @@
 <template>
     <div class="main">
         <hero-container />
-        <section-wrapper class="flex flex-col gap-4 py-4 ">
-            <h2 class="text-5xl font-bold text-center font-primary text-clear">Why Gamechanger Urbanzoo?</h2>
-            <div class="flex justify-between gap-10 p-20 mt-12 rounded-lg bg-surface-elevation-low">
-                <card-wrapper class="items-center justify-center h-[300px] gap-4">
-                    <icon-selector
-                        type="clock-icon"
-                        class="h-1/2"
-                    />
-                    <h3 class="relative z-10 text-3xl leading-loose font-primary text-clear paint-stroke">Saves Time</h3>
-                    <p class="leading-8 text-clear">
-                        Some random loren impsum talking about something that is pretty long.
-                    </p>
-                </card-wrapper>
-                <card-wrapper class="items-center justify-center h-[300px] gap-4">
-                    <icon-selector
-                        type="payments-icon"
-                        class="h-1/2"
-                    />
-                    <h3 class="relative z-10 text-3xl leading-loose font-primary text-clear paint-stroke">Saves Money</h3>
-                    <p class="leading-8 text-clear">
-                        Some random loren impsum talking about something that is pretty long, and that you
-                        dont want to listen to for sure.
-                    </p>
-                </card-wrapper>
-                <card-wrapper class="items-center justify-center h-[300px] gap-4">
-                    <icon-selector
-                        type="therapy-icon"
-                        class="h-1/2"
-                    />
-                    <h3 class="relative z-10 text-3xl leading-loose font-primary text-clear paint-stroke">Gives Peace of Mind</h3>
-                    <p class="leading-8 text-clear">
-                        Some random loren impsum talking about something that is pretty long, and that you
-                        dont want to listen to for sure.
-                    </p>
-                </card-wrapper>
-            </div>
-        </section-wrapper>
+        <benefits-section />
 
         <section-wrapper class="flex flex-col text-center">
             <h2 class="text-5xl font-bold font-primary text-clear">Testimonials</h2>
@@ -81,6 +45,7 @@
 <script setup lang="ts">
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
+
 
 const options = {
     type: 'loop',
