@@ -1,5 +1,5 @@
 <template>
-    <main class="min-h-screen pb-20 bg-surface-bg font-secondary dark">
+    <main class="min-h-screen pb-20 bg-surface-bg font-secondary">
         <menu-container />
         <header-container />
         <slot />
