@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
   "scripts": {
-    "dev": "nuxi dev .playground",
+    "dev": "nuxi dev",
     "build": "nuxt build .playground",
     "generate": "nuxt generate .playground",
     "preview": "nuxt preview .playground",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "@splidejs/vue-splide": "^0.6.12",
     "pinia": "^2.1.7"
   }
 }

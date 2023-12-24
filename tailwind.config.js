@@ -34,6 +34,10 @@ export default {
                 "hero-height": "50vh"
             },
 
+            margin: {
+                "section-margin": "var(--section-margin)"
+            },
+
             fontFamily: {
                 primary: "var(--font-primary)",
                 secondary: "var(--font-secondary)",
