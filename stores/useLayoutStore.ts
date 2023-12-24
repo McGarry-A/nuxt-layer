@@ -3,7 +3,7 @@ export const useLayoutStore = defineStore('layout', () => {
         type: "base-header",
         position: "",
         variant: "end",
-        animation: "fade",
+        animation: undefined,
         options: {
             showBrandName: true,
         }
@@ -11,7 +11,7 @@ export const useLayoutStore = defineStore('layout', () => {
 
     const menu = ref<IMenu>({
         type: "base-menu",
-        animation: "slide"
+        animation: undefined,
     });
 
     const hero = ref<IHero>({
@@ -49,9 +49,9 @@ type MenuType = "base-menu"
 type HeaderType = "base-header"
 type HeroType = "base-hero"
 
-type MenuAnimation = "slide"
-type HeroAnimation = "fade"
-type HeaderAnimation = "fade"
+type MenuAnimation = "slide" | undefined
+type HeroAnimation = "fade" | undefined
+type HeaderAnimation = "fade" | undefined
 
 type HeaderPosition = "" | "fixed" | "sticky"
 

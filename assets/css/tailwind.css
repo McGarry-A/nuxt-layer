@@ -8,7 +8,7 @@
     --brand: theme("colors.sky.700");
     --brand-strong: theme("colors.sky.950");
 
-    --secondary-subtle: theme("colors.violet.400");
+    --secondary-subtle: theme("colors.violet.200");
     --secondary: theme("colors.violet.700");
     --secondary-strong: theme("colors.violet.900");
 

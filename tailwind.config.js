@@ -5,6 +5,11 @@ export default {
     theme: {
         extend: {
             colors: {
+                clear: "var(--clear)",
+                subtle: "var(--subtle)",
+                "inverse-clear": "var(--inverse-clear)",
+                "inverse-subtle": "var(--inverse-subtle)",
+
                 brand: {
                     subtle: "var(--brand-subtle)",
                     DEFAULT: "var(--brand)",
@@ -15,10 +20,6 @@ export default {
                     DEFAULT: "var(--secondary)",
                     strong: "var(--secondary-strong)"
                 },
-                clear: "var(--clear)",
-                subtle: "var(--subtle)",
-                "inverse-clear": "var(--inverse-clear)",
-                "inverse-subtle": "var(--inverse-subtle)",
                 surface: {
                     bg: "var(--surface-bg)",
                     "elevation-low": "var(--surface-elevation-low)",

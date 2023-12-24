@@ -11,6 +11,7 @@ import PaymentsIcon from "../Icons/PaymentsIcon.vue"
 import PersonIcon from "../Icons/PersonIcon.vue";
 import TherapyIcon from "../Icons/TherapyIcon.vue"
 import StarIcon from "../Icons/StarIcon.vue"
+import TickIcon from "../Icons/TickIcon.vue";
 
 interface Props {
     type: keyof typeof icons;
@@ -27,6 +28,7 @@ const icons = {
     "therapy-icon": TherapyIcon,
     "person-icon": PersonIcon,
     "star-icon": StarIcon,
+    "tick-icon": TickIcon
 };
 
 const getIcon = () => icons[props.type];
