@@ -37,6 +37,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "@splidejs/vue-splide": "^0.6.12",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "tailwind-merge": "^2.2.0"
   }
 }

@@ -1,6 +1,6 @@
 <template>
     <component :is="getAnimation()">
-        <content-wrapper class="bg-surface">
+        <content-wrapper class="bg-surface mt-section-margin">
             <slot />
         </content-wrapper>
     </component>

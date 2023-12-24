@@ -1,11 +1,10 @@
 <template>
     <div class="main">
         <hero-container />
-        <section-wrapper class="flex flex-col gap-4 py-4 text-center">
-            <h2 class="text-5xl font-bold font-primary text-clear">Why Gamechanger Urbanzoo?</h2>
+        <section-wrapper class="flex flex-col gap-4 py-4 ">
+            <h2 class="text-5xl font-bold text-center font-primary text-clear">Why Gamechanger Urbanzoo?</h2>
             <div class="flex justify-between gap-10 p-20 mt-12 rounded-lg bg-surface-elevation-low">
-                <div
-                    class="flex-1 h-[300px] bg-surface-elevation-high rounded-lg flex flex-col justify-center items-center p-4 gap-3 shadow-sm">
+                <card-wrapper class="items-center justify-center h-[300px] gap-4">
                     <icon-selector
                         type="clock-icon"
                         class="h-1/2"
@@ -14,9 +13,8 @@
                     <p class="leading-8 text-clear">
                         Some random loren impsum talking about something that is pretty long.
                     </p>
-                </div>
-                <div
-                    class="flex-1 h-[300px] bg-surface-elevation-high rounded-lg flex flex-col justify-center items-center p-4 gap-3 shadow-sm">
+                </card-wrapper>
+                <card-wrapper class="items-center justify-center h-[300px] gap-4">
                     <icon-selector
                         type="payments-icon"
                         class="h-1/2"
@@ -26,9 +24,8 @@
                         Some random loren impsum talking about something that is pretty long, and that you
                         dont want to listen to for sure.
                     </p>
-                </div>
-                <div
-                    class="flex-1 h-[300px] bg-surface-elevation-high rounded-lg flex flex-col justify-center items-center p-4 gap-3 shadow-sm">
+                </card-wrapper>
+                <card-wrapper class="items-center justify-center h-[300px] gap-4">
                     <icon-selector
                         type="therapy-icon"
                         class="h-1/2"
@@ -38,10 +35,11 @@
                         Some random loren impsum talking about something that is pretty long, and that you
                         dont want to listen to for sure.
                     </p>
-                </div>
+                </card-wrapper>
             </div>
         </section-wrapper>
-        <section-wrapper class="flex flex-col gap-4 py-4 text-center mt-section-margin">
+
+        <section-wrapper class="flex flex-col text-center">
             <h2 class="text-5xl font-bold font-primary text-clear">Testimonials</h2>
             <p class="pt-4 text-lg text-clear">Dont take my word for it! Hear people say imaginary things I just made up!</p>
             <div class="flex justify-center gap-10 p-20 mt-12 rounded-lg bg-surface-elevation-low">
@@ -68,8 +66,10 @@
                                 </div>
                             </div>
                             <icon-selector type="star-icon" />
-                            <p class="text-clear">"Wow! Isn't this site awesome? Doesn't it want to make you pay me a big fat salary? No? Ok
-                                then."</p>
+                            <p class="text-clear text-start">Isn't this site awesome? Doesn't it want to make you pay me a big fat salary? No?
+                                Ok
+                                then."
+                            </p>
                         </div>
                     </splide-slide>
                 </splide>
