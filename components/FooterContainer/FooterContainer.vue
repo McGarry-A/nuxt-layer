@@ -1,6 +1,5 @@
 <template>
     <transition-wrapper
-        key="footer"
         :type="animation"
         :appear="true"
     >

@@ -1,6 +1,6 @@
 <template>
     <transition-wrapper
-        :name="null"
+        :type="animation"
         :appear="true"
     >
         <component :is="getAboutSection()" />
@@ -8,7 +8,6 @@
 </template>
 
 <script setup lang="ts">
-
 import type { Component } from "vue";
 import BaseAbout from "../BaseAbout/BaseAbout.vue";
 

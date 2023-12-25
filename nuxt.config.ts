@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     plugins: ["./plugins/splide.js"],
-    modules: ['@nuxtjs/storybook', '@nuxtjs/tailwindcss', '@pinia/nuxt', ['@nuxtjs/google-fonts', {
+    modules: ['@nuxtjs/tailwindcss', ['@pinia/nuxt', { autoImports: ["useLayoutStore", "useUiStore"] }], ['@nuxtjs/google-fonts', {
         families: {
             Poppins: [400, 600, 700],
             Lato: [400, 600, 700],
@@ -12,12 +12,8 @@ export default defineNuxtConfig({
     tailwindcss: {
         cssPath: "./assets/css/tailwind.css"
     },
-    storybook: {
-        url: 'http://localhost:6000',
-        port: 6000
-    },
     imports: {
-        dirs: ["./stores"],
+        dirs: ["stores"],
         presets: [
             { from: "tailwind-merge", imports: ['twMerge'] },
         ]

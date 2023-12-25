@@ -8,9 +8,10 @@
 </template>
 
 <script setup lang="ts">
+import type { TAnimate } from '~/stores/useLayoutStore';
 
 const props = defineProps<{
-    type: "slide" | "fade",
+    type: TAnimate,
     appear?: boolean
 }>()
 </script>
