@@ -4,6 +4,7 @@
         <benefits-section />
         <testimonials-section />
         <pricing-section />
+        <footer-container />
     </div>
 </template>
 

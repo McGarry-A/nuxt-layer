@@ -1,5 +1,5 @@
 <template>
-    <content-wrapper class="flex items-center justify-center gap-12 text-clear mt-section-margin">
+    <content-wrapper class="flex items-center justify-center min-h-[30vh] gap-12 text-clear mt-section-margin">
         <div class="flex justify-start flex-1">
             <h1 class="font-bold text-8xl font-primary text-brand text-balance">
                 About This Theme!
