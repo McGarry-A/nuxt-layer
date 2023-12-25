@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import type { Component } from "vue";
-import BaseAbout from "../BaseAbout/BaseAbout.vue";
+import BaseAbout from "@components/BaseAbout/BaseAbout.vue";
 
 const layoutStore = useLayoutStore();
 const { about: { type, animation } } = layoutStore;

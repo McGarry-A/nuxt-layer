@@ -9,6 +9,9 @@ export default defineNuxtConfig({
             Galada: [400]
         }
     }]],
+    alias: {
+        "@components": "./components"
+    },
     tailwindcss: {
         cssPath: "./assets/css/tailwind.css"
     },

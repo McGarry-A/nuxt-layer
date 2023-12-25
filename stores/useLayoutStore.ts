@@ -23,7 +23,7 @@ export const useLayoutStore = defineStore('layout', () => {
 
     const footer = ref<IFooter>({
         type: "base-footer",
-        animation: "slide"
+        animation: "fade"
     })
 
     const about = ref<IAbout>({

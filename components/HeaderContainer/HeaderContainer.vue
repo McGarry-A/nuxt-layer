@@ -10,7 +10,7 @@
   
 <script setup lang="ts">
 import type { Component } from "vue";
-import BaseHeader from "../BaseHeader/BaseHeader.vue";
+import BaseHeader from "@components/BaseHeader/BaseHeader.vue";
 
 const layoutStore = useLayoutStore();
 const { header: { type, animation } } = layoutStore;
