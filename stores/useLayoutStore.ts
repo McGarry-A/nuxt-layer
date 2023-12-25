@@ -68,7 +68,7 @@ type HeroType = "base-hero"
 type FooterType = "base-footer"
 type AboutType = "base-about"
 
-type TAnimate = "slide" | "fade"
+export type TAnimate = "slide" | "fade"
 
 type HeaderPosition = "" | "fixed" | "sticky"
 
