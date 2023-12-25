@@ -1,10 +1,5 @@
 <template>
-    <transition-wrapper
-        :type="animation"
-        :appear="true"
-    >
-        <component :is="getAboutSection()" />
-    </transition-wrapper>
+    <component :is="getAboutSection()" />
 </template>
 
 <script setup lang="ts">

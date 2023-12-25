@@ -1,10 +1,12 @@
 <template>
     <transition-wrapper
-        key="Hero"
         :type="animation"
         :appear="true"
     >
-        <component :is="getHeroType()" />
+        <component
+            :is="getHeroType()"
+            v-if="animation"
+        />
     </transition-wrapper>
 </template>
 

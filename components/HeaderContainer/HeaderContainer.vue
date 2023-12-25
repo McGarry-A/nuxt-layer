@@ -1,11 +1,5 @@
 <template>
-    <transition-wrapper
-        key="Header"
-        :type="animation"
-        :appear="true"
-    >
-        <component :is="getHeaderType()" />
-    </transition-wrapper>
+    <component :is="getHeaderType()" />
 </template>
   
 <script setup lang="ts">
