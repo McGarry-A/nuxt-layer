@@ -15,7 +15,7 @@
       lang="ts"
     >
     import type { Component } from "vue";
-    import BaseMenu from "../BaseMenu/BaseMenu.vue";
+    import BaseMenu from "@components/BaseMenu/BaseMenu.vue";
 
     const layoutStore = useLayoutStore();
     const uiStore = useUiStore()

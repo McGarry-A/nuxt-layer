@@ -1,5 +1,6 @@
 <template>
     <transition-wrapper
+        key="Footer"
         :type="animation"
         :appear="true"
     >
@@ -9,7 +10,7 @@
   
 <script setup lang="ts">
 import type { Component } from "vue";
-import BaseFooter from "../BaseFooter/BaseFooter.vue";
+import BaseFooter from "@components/BaseFooter/BaseFooter.vue";
 
 const layoutStore = useLayoutStore();
 const { footer: { type, animation } } = layoutStore;

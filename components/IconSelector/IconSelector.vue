@@ -3,15 +3,15 @@
 </template>
 
 <script setup lang="ts">
-import BurgerMenu from "../Icons/BurgerMenu.vue";
-import ClockIcon from "../Icons/ClockIcon.vue";
-import CloseIcon from "../Icons/CloseIcon.vue";
-import MouseIcon from "../Icons/MouseIcon.vue";
-import PaymentsIcon from "../Icons/PaymentsIcon.vue"
-import PersonIcon from "../Icons/PersonIcon.vue";
-import TherapyIcon from "../Icons/TherapyIcon.vue"
-import StarIcon from "../Icons/StarIcon.vue"
-import TickIcon from "../Icons/TickIcon.vue";
+import BurgerMenu from "@components/Icons/BurgerMenu.vue";
+import ClockIcon from "@components/Icons/ClockIcon.vue";
+import CloseIcon from "@components/Icons/CloseIcon.vue";
+import MouseIcon from "@components/Icons/MouseIcon.vue";
+import PaymentsIcon from "@components/Icons/PaymentsIcon.vue"
+import PersonIcon from "@components/Icons/PersonIcon.vue";
+import TherapyIcon from "@components/Icons/TherapyIcon.vue"
+import StarIcon from "@components/Icons/StarIcon.vue"
+import TickIcon from "@components/Icons/TickIcon.vue";
 
 interface Props {
     type: keyof typeof icons;
