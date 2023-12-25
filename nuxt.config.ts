@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    plugins: ["./plugins/splide.js"],
     modules: ['@nuxtjs/storybook', '@nuxtjs/tailwindcss', '@pinia/nuxt', ['@nuxtjs/google-fonts', {
         families: {
             Poppins: [400, 600, 700],
@@ -16,7 +17,10 @@ export default defineNuxtConfig({
         port: 6000
     },
     imports: {
-        dirs: ["./stores"]
+        dirs: ["./stores"],
+        presets: [
+            { from: "tailwind-merge", imports: ['twMerge'] },
+        ]
     },
     vite: {
         server: {
@@ -30,5 +34,5 @@ export default defineNuxtConfig({
         options: {
             linkActiveClass: "font-bold"
         }
-    }
+    },
 })

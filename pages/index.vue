@@ -1,5 +1,11 @@
 <template>
-    <hero-container />
+    <div class="main">
+        <hero-container />
+        <benefits-section />
+        <testimonials-section />
+        <pricing-section />
+    </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>

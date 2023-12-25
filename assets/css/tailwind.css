@@ -8,24 +8,26 @@
     --brand: theme("colors.sky.700");
     --brand-strong: theme("colors.sky.950");
 
-    --secondary-subtle: theme("colors.violet.400");
+    --secondary-subtle: theme("colors.violet.200");
     --secondary: theme("colors.violet.700");
     --secondary-strong: theme("colors.violet.900");
 
     --surface-disabled: theme("colors.slate.400");
 
     --surface-bg: theme("colors.slate.200");
-    --surface-elevation-low: theme("colors.slate.50");
-    --surface-elevation-high: theme("colors.white");
+    --surface-elevation-low: theme("colors.gray.300");
+    --surface-elevation-high: theme("colors.gray.100");
 
     --clear: theme("colors.gray.800");
-    --subtle: theme("colors.gray.300");
+    --subtle: theme("colors.gray.500");
     --inverse-subtle: theme("colors.gray.700");
     --inverse-clear: theme("colors.gray.100");
 
     --font-primary: Poppins, sans-serif;
     --font-secondary: Lato, sans-serif;
     --font-tertiary: Galada, sans-serif;
+
+    --section-margin: 5rem;
   }
 
   .dark {
@@ -34,24 +36,39 @@
     --brand-strong: theme("colors.sky.400");
 
     --surface-bg: theme("colors.slate.900");
-    --surface-elevation-low: theme("colors.slate.800");
-    --surface-elevation-high: theme("colors.slate.950");
+    --surface-elevation-low: theme("colors.slate.700");
+    --surface-elevation-high: theme("colors.gray.800");
 
     --clear: theme("colors.gray.100");
-    --subtle: theme("colors.gray.700");
+    --subtle: theme("colors.gray.500");
     --inverse-subtle: theme("colors.gray.300");
     --inverse-clear: theme("colors.gray.800");
   }
 
   @layer components {
+    body,
+    html {
+      @apply bg-surface-bg;
+    }
+
     button {
-        @apply py-3 px-8
+      @apply px-8 py-3;
     }
   }
 
   @layer utilities {
-    .btn-primary { @apply bg-brand text-white rounded-2xl font-primary };
-    .btn-secondary { @apply bg-secondary text-white rounded-2xl font-primary };
-    .btn-ghost { @apply bg-transparent text-brand rounded-2xl font-semibold border-2 border-brand font-primary }
+    .btn-primary {
+      @apply text-white bg-brand rounded-2xl font-primary;
+    }
+    .btn-secondary {
+      @apply text-white bg-secondary rounded-2xl font-primary;
+    }
+    .btn-ghost {
+      @apply font-semibold bg-transparent border-2 text-brand rounded-2xl border-brand font-primary;
+    }
+
+    .paint-stroke {
+      @apply before:absolute before:bg-brand before:h-1/3 before:w-full before:bottom-0 before:-z-10 before:opacity-30 before:-skew-x-12;
+    }
   }
 }

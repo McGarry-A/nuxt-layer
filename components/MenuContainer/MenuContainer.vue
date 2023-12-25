@@ -1,40 +1,34 @@
 <template>
-  <component
-    :is="getAnimation()"
-    class="animation"
-  >
-    <component
-      :is="getMenu()"
-      v-if="uiStore.menuIsOpen"
-    />
-  </component>
+    <transition-wrapper
+        key="Menu"
+        :type="animation"
+    >
+        <component
+            :is="getMenu()"
+            v-if="uiStore.menuIsOpen"
+        />
+    </transition-wrapper>
 </template>
 
-    <script
+<script
       setup
       lang="ts"
     >
-      import type { Component } from "vue";
-      import BaseMenu from "../BaseMenu/BaseMenu.vue";
-      import AnimateSlideWrapper from "../AnimateSlideWrapper/AnimateSlideWrapper.vue"
+    import type { Component } from "vue";
+    import BaseMenu from "../BaseMenu/BaseMenu.vue";
 
-      const layoutStore = useLayoutStore();
-      const uiStore = useUiStore()
-      
-      const { menu: { type: menuType, animation: animationType }} = layoutStore
+    const layoutStore = useLayoutStore();
+    const uiStore = useUiStore()
 
-      interface IHeaderMap {
-      [key: string]: Component
-      }
+    const { menu: { type, animation } } = layoutStore
 
-      const menuMap: IHeaderMap = {
-      "base-menu": BaseMenu,
-      };
+    interface IHeaderMap {
+        [key: string]: Component
+    }
 
-      const animationMap: IHeaderMap = {
-      "slide": AnimateSlideWrapper
-      }
+    const menuMap: IHeaderMap = {
+        "base-menu": BaseMenu,
+    };
 
-      const getMenu = () => menuMap[menuType]
-      const getAnimation = () => animationMap[animationType]
+    const getMenu = () => menuMap[type]
     </script>
