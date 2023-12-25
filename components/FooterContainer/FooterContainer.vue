@@ -1,11 +1,5 @@
 <template>
-    <transition-wrapper
-        key="Footer"
-        :type="animation"
-        :appear="true"
-    >
-        <component :is="getFooterType()" />
-    </transition-wrapper>
+    <component :is="getFooterType()" />
 </template>
   
 <script setup lang="ts">
@@ -13,7 +7,7 @@ import type { Component } from "vue";
 import BaseFooter from "@components/BaseFooter/BaseFooter.vue";
 
 const layoutStore = useLayoutStore();
-const { footer: { type, animation } } = layoutStore;
+const { footer: { type } } = layoutStore;
 
 interface IfooterMap {
     [key: string]: Component

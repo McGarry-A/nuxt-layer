@@ -1,13 +1,5 @@
 <template>
-    <transition-wrapper
-        :type="animation"
-        :appear="true"
-    >
-        <component
-            :is="getHeroType()"
-            v-if="animation"
-        />
-    </transition-wrapper>
+    <component :is="getHeroType()" />
 </template>
 
 <script setup lang="ts">
@@ -15,7 +7,7 @@ import type { Component } from "vue";
 import BaseHero from "@components/BaseHero/BaseHero.vue";
 
 const layoutStore = useLayoutStore();
-const { hero: { type, animation } } = layoutStore;
+const { hero: { type } } = layoutStore;
 
 interface IHeroMap {
     [key: string]: Component
