@@ -1,6 +1,6 @@
 <template>
     <content-wrapper
-        class="flex justify-center flex-1 h-full min-h-[80vh]"
+        class="flex justify-center flex-1 h-full min-h-[70vh]"
         :class="{ 'flex-row-reverse': variant === 'end' }"
     >
         <div
