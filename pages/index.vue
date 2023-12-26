@@ -6,7 +6,7 @@
         <testimonials-section />
         <pricing-section />
         <bullet-section />
-        <products-section />
+        <product-section />
         <footer-container />
     </div>
 </template>

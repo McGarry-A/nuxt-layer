@@ -5,7 +5,7 @@
   >
     <icon-selector
       type="burger-menu"
-      class="text-brand-strong"
+      class="hidden text-brand-strong lg:block"
     />
   </button>
 </template>
