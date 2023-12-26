@@ -11,7 +11,7 @@
                     v-for="bullet in bullets" 
                     :key="bullet.number" 
                     class="flex items-start gap-4">
-                    <h3 class="text-xl font-bold text-brand">{{ bullet.number }}</h3>
+                    <h3 class="text-3xl font-bold text-brand">{{ bullet.number }}</h3>
                     <p class="flex-wrap text-lg">{{ bullet.description }}</p>
                 </div>
             </div>
