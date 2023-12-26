@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    app: { pageTransition: { name: "page", mode: "out-in" }},
     plugins: ["./plugins/splide.js"],
     modules: ['@nuxtjs/tailwindcss', ['@pinia/nuxt', { autoImports: ["useLayoutStore", "useUiStore"] }], ['@nuxtjs/google-fonts', {
         families: {

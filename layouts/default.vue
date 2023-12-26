@@ -3,6 +3,5 @@
         <menu-container />
         <header-container />
         <slot class="mb-auto" />
-        <footer-container />
     </main>
 </template>
